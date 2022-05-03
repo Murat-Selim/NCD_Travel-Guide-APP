@@ -1,6 +1,6 @@
 # NCD_Travel-Guide-APP
 
-This project is a simple travel note keeping program on the Near blockchain. It also serves as a guide for those who want to travel. Travelers can create, update and delete their travel notes here. Those who want to travel can decide on their travels by visiting the travel guide here. This project will help people to know where to go when they travel.
+This project is a simple travel note keeping program on the Near blockchain. It also serves as a guide for those who want to travel. Travelers can create, update and delete their travel notes here. Those who want to travel can decide on their travels by visiting the travel guide here. This project it will help people to make travel choices.
 
 ## Installation
 
