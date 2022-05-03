@@ -73,18 +73,6 @@ export class Travel {
         return travel
     }
     
-    // public static getTravelByOwner(owner: AccountId): Array<Travel> {
-    //     let travels = new Array<Travel>()
-    //     for (let i = 0; i < travels.length; i++) {
-    //         let travel = travels[i]
-    //         if (travel.owner == owner) {
-    //             travels.push(travel)
-    //         }
-    //     }
-    
-    //     assert(travels.length <= 0, "No travels found by owner")
-    //     return travels
-    // }
     
     static getTravels(): Array<Travel> {
         let travels = new Array<Travel>()

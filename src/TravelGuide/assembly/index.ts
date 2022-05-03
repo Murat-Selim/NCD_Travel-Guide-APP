@@ -20,7 +20,3 @@
     return travels.values()
  }
 
-//  export function getTravelsByOwner(owner: AccountId): Travel[] {
-//     return Travel.getTravelByOwner(owner)
-//  }
-
