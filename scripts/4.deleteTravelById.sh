@@ -6,10 +6,10 @@ set -e
 
 echo
 echo 'About to call deleteTravelById() on the contract'
-echo near call $CONTRACT deleteTravelById '{"id":'"$id"'}' --accountId $OWNER
+echo near call \$CONTRACT deleteTravelById '{"id": '$id'}' --accountId \$OWNER
 echo
 echo \$CONTRACT is $CONTRACT
 echo \$OWNER is $OWNER
 echo  '(id):' \$id is [ $id ] 
 echo
-near call $CONTRACT deleteTravelById '{"id":'"$id"'}' --accountId $OWNER
+near call $CONTRACT deleteTravelById '{"id": '$id'}' --accountId $OWNER

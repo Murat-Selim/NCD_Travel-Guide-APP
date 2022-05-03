@@ -6,9 +6,9 @@ set -e
 
 echo
 echo 'About to call getTravelById() on the contract'
-echo near call $CONTRACT getTravelById '{"id":'"$id"'}' --accountId $OWNER
+echo near call \$CONTRACT getTravelById '{"id": '$id'}' --accountId \$OWNER
 echo
 echo \$CONTRACT is $CONTRACT
 echo  '(id):' \$id is [ $id ] 
 echo
-near call $CONTRACT getTravelById '{"id":'"$id"'}' --accountId $OWNER
+near call $CONTRACT getTravelById '{"id": '$id'}' --accountId $OWNER
