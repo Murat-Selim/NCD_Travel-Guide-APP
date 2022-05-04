@@ -14,7 +14,7 @@ export class Travel {
     desc: string
 
     constructor(country: string, city: string, title: string, desc: string) {  
-        this.id = math.hash32<string>(title)
+        this.id = math.hash32<string>(title + desc)
         this.owner = Context.sender
         this.country = country
         this.city = city

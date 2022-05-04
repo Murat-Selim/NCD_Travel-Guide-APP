@@ -6,13 +6,16 @@ set -e
 
 echo
 echo 'About to call createTravel() on the contract'
-echo near call \$CONTRACT createTravel '{"country": "'"$country"'", "city": "'"$city"'", "title": "'"$title"'", "desc": "'"$desc"'"}' --accountId \$OWNER
+echo near call $CONTRACT createTravel '{"country": "$country", "city": "$city", "title": "$title", "desc": "$desc"}' --accountId $OWNER
 echo
 echo \$CONTRACT is $CONTRACT
 echo \$OWNER is $OWNER
-echo  '(country):' \$country is [ $country ] 
-echo  '(city):' \$city is [ $city ] 
-echo  '(title):' \$title is [ $title ] 
-echo  '(desc):' \$desc is [ $desc ] 
+echo \$country is [ $country ]  '(country)'
+echo \$city is [ $city ] '(city)' 
+echo \$title is [ $title ] '(title)'
+echo \$desc is [ $desc ] '(desc)'
+echo "--------------------------------------------"
 echo
+echo
+
 near call $CONTRACT createTravel '{"country": "'"$country"'", "city": "'"$city"'", "title": "'"$title"'", "desc": "'"$desc"'"}' --accountId $OWNER
