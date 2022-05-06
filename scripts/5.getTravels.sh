@@ -6,7 +6,7 @@ set -e
 
 echo
 echo 'About to call getTravels() on the contract'
-echo near view \$CONTRACT getTravels --accountId \$OWNER
+echo near view $CONTRACT getTravels --accountId $OWNER
 echo
 echo \$CONTRACT is $CONTRACT
 echo

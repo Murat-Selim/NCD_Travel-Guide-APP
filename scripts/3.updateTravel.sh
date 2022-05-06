@@ -6,14 +6,14 @@ set -e
 
 echo
 echo 'About to call updateTravel() on the contract'
-echo near call \$CONTRACT updateTravel '{"id": '$id', "country": "'"$country"'", "city": "'"$city"'", "title": "'"$title"'", "desc": "'"$desc"'"}' --accountId \$OWNER
+echo near call $CONTRACT updateTravel '{"id": '"$1"', "country": "'"$2"'", "city": "'"$3"'", "title": "'"$4"'", "desc": "'"$5"'"}' --accountId $OWNER
 echo
 echo \$CONTRACT is $CONTRACT
 echo \$OWNER is $OWNER
-echo  '(id):' \$id is [ $id ] 
-echo  '(country):' \$country is [ $country ] 
-echo  '(city):' \$city is [ $city ] 
-echo  '(title):' \$title is [ $title ] 
-echo  '(desc):' \$desc is [ $desc ] 
+echo \$1 is [ $1 ] '(id)'
+echo \$2 is [ $2 ] '(country)'
+echo \$3 is [ $3 ] '(city)'
+echo \$4 is [ $4 ] '(title)'
+echo \$5 is [ $5 ] '(desc)'
 echo
-near call $CONTRACT updateTravel '{"id": '$id', "country": "'"$country"'", "city": "'"$city"'", "title": "'"$title"'", "desc": "'"$desc"'"}' --accountId $OWNER
+near call $CONTRACT updateTravel '{"id": '"$1"', "country": "'"$2"'", "city": "'"$3"'", "title": "'"$4"'", "desc": "'"$5"'"}' --accountId $OWNER
